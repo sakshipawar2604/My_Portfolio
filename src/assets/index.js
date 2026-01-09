@@ -26,6 +26,7 @@ import hp_white from './company/hp_white.png';
 import hp_blue from './company/hp_blue.png';
 import utd from './company/utd.png';
 import pccoe from './company/pccoe.png';
+import lumel from './company/lumel.png';
 
 import carrent from './carrent.png';
 import toll from './toll.jpg';
@@ -63,6 +64,7 @@ export {
   hp_blue,
   utd,
   pccoe,
+  lumel,
   carrent,
   toll,
   the_lady,

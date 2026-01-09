@@ -20,6 +20,7 @@ import {
   utd,
   ambitech,
   pccoe,
+  lumel,
   carrent,
   toll,
   insightgen,
@@ -138,6 +139,19 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: 'Softwate Engineering Intern',
+    company_name: 'Lumel',
+    icon: lumel,
+    iconBg: '#E6DEDD',
+    date: 'May 2025 - Present',
+    points: [
+      'Built Cube’s allocation backend to power dynamic semantic-model views and real-time forecasting in Microsoft Fabric and Power BI.',
+      'Benchmarked DuckLake, Delta Lake, and OneLake on 30M-row datasets, accelerating the platform decision by 40%.',
+      'Optimized SQL pipelines with CTEs and indexing, cutting allocation runtimes by 70%.',
+      'Integrated telemetry logging in Cube to drive usage-aware and consumption-based pricing.',
+    ],
+  },
   {
     title: 'Full stack developer',
     company_name: 'IEEE UTD',
