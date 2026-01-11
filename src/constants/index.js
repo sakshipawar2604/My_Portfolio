@@ -15,7 +15,7 @@ import {
   git,
   figma,
   docker,
-  hp_white,
+  // hp_white,
   hp_blue,
   utd,
   ambitech,
