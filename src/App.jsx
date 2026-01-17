@@ -6,7 +6,6 @@ import {
   Experience,
   Publications,
   Hobbies,
-  Hero,
   Navbar,
   Tech,
   Works,
