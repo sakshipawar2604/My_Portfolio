@@ -1,4 +1,5 @@
 import logo from './logo.png';
+import profilePhoto from './profile_photo.jpg';
 import backend from './backend.png';
 import creator from './creator.png';
 import mobile from './mobile.png';
@@ -21,24 +22,21 @@ import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
 
-import ambitech from './company/ambitech.png';
-import hp_white from './company/hp_white.png';
-import hp_blue from './company/hp_blue.png';
-import utd from './company/utd.png';
+import accenture from './company/accenture.png';
+import systools from './company/systools.png';
+import ieee from './company/ieee.png';
+import uta from './company/uta.png';
 import pccoe from './company/pccoe.png';
-import lumel from './company/lumel.png';
 
 import carrent from './carrent.png';
 import toll from './toll.jpg';
 import insightgen from './insightgen.png';
 import banking from './banking.png';
 
-import the_lady from './sketches/the_lady.jpg';
-import horse from './sketches/horse.jpg';
-import falcon from './sketches/falcon.jpg';
 
 export {
   logo,
+  profilePhoto,
   backend,
   creator,
   mobile,
@@ -59,17 +57,13 @@ export {
   tailwind,
   typescript,
   threejs,
-  ambitech,
-  hp_white,
-  hp_blue,
-  utd,
   pccoe,
-  lumel,
+  accenture,
+  systools,
+  ieee,
+  uta,
   carrent,
   toll,
-  the_lady,
-  horse,
-  falcon,
   insightgen,
   banking,
 };

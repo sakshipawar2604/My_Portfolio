@@ -15,18 +15,15 @@ import {
   git,
   figma,
   docker,
-  hp_blue,
-  utd,
-  ambitech,
+  accenture,
+  systools,
+  ieee,
+  uta,
   pccoe,
-  lumel,
   carrent,
   toll,
   insightgen,
   threejs,
-  the_lady,
-  horse,
-  falcon,
   banking,
 } from '../assets';
 
@@ -47,38 +44,31 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'UX Designer',
-    icon: mobile,
-  },
-  {
-    title: 'Web Developer',
+    title: 'Full-Stack Engineer',
     icon: web,
   },
   {
-    title: 'Backend Developer',
+    title: 'Cloud-Native & DevOps Engineer',
     icon: backend,
   },
   {
-    title: 'Artist & Illustrator',
+    title: 'Applied ML & Agentic AI',
     icon: creator,
+  },
+  {
+    title: 'Product-Led Problem Solver',
+    icon: mobile,
   },
 ];
 
-const sketches = [
+const activities = [
   {
-    title: 'The Lady',
-    image: horse,
-    link: 'https://www.instagram.com/artxiac/p/Cu4lnXqqj7v/?img_index=1',
+    title: 'La Trobe Innovation Challenge (2022)',
+    desc: 'Secured 3rd place for designing a blockchain + IoT sustainability platform.',
   },
   {
-    title: 'React Native Developer',
-    image: falcon,
-    link: 'https://www.instagram.com/p/CQEN1uVLGcr/',
-  },
-  {
-    title: 'Backend Developer',
-    image: the_lady,
-    link: 'https://www.instagram.com/p/C4nt-EkyCea/?img_index=1',
+    title: 'IEEE Coordinator',
+    desc: 'Coordinated 15+ tech events and designed 10+ newsletters, boosting engagement among 300+ members.',
   },
 ];
 
@@ -100,19 +90,15 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: 'React JS',
+    name: 'React.js',
     icon: reactjs,
   },
   {
-    name: 'Redux Toolkit',
+    name: 'Redux',
     icon: redux,
   },
   {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
-    name: 'Node JS',
+    name: 'Node.js',
     icon: nodejs,
   },
   {
@@ -120,152 +106,101 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: 'Three JS',
-    icon: threejs,
-  },
-  {
-    name: 'git',
+    name: 'Git',
     icon: git,
   },
   {
-    name: 'figma',
-    icon: figma,
+    name: 'Docker',
+    icon: docker,
   },
   {
-    name: 'docker',
-    icon: docker,
+    name: 'Tailwind CSS',
+    icon: tailwind,
   },
 ];
 
 const experiences = [
   {
-    title: 'Softwate Engineering Intern',
-    company_name: 'Lumel',
-    icon: lumel,
+    title: 'Software Engineer',
+    company_name: 'Accenture',
+    icon: accenture,
     iconBg: '#E6DEDD',
-    date: 'May 2025 - Present',
+    date: 'Aug 2023 - Jul 2024',
     points: [
-      'Built Cube’s allocation backend to power dynamic semantic-model views and real-time forecasting in Microsoft Fabric and Power BI.',
-      'Benchmarked DuckLake, Delta Lake, and OneLake on 30M-row datasets, accelerating the platform decision by 40%.',
-      'Optimized SQL pipelines with CTEs and indexing, cutting allocation runtimes by 70%.',
-      'Integrated telemetry logging in Cube to drive usage-aware and consumption-based pricing.',
+      'Developed and owned a React-based approval workflow module within Siemens Teamcenter, replacing email-based coordination with an in-tool approval system for engineering change requests.',
+      'Built a debounced global search using React and REST APIs, reducing redundant API calls and lowering search traffic by ~40%.',
+      'Optimized backend query paths by eliminating redundant SQL calls and adding targeted indexes, improving API response times by ~30% in production.',
+      'Deployed production builds to AWS EC2 via S3 and used CloudWatch logs to diagnose and resolve post-release workflow failures.',
+      'Implemented config-driven backend validations for multi-region approval flows, eliminating code forks and improving maintainability.',
     ],
   },
   {
-    title: 'Full stack developer',
-    company_name: 'IEEE UTD',
-    icon: utd,
+    title: 'Software Engineer',
+    company_name: 'SysTools',
+    icon: systools,
     iconBg: '#E6DEDD',
-    date: 'Aug 2024 - Apr 2025',
+    date: 'Jul 2022 - Jun 2023',
     points: [
-      'Developed scalable React.js web applications with responsive, cross-browser-compatible designs, optimizing performance across devices.',
-      'Enhanced the IEEE UTD website by integrating interactive features like a chatbot, boosting user engagement by 30% fostering team collaboration.',
-      'Conducted code reviews and provided constructive feedback, promoting best practices and maintaining high-quality standards.',
+      'Built an enterprise-grade email migration tool using React and Spring Boot to automate PST-to-MBOX conversions, reliably processing 10k+ emails per migration job for large customer accounts.',
+      'Improved email search performance by ~40% on 100k+ records using Elasticsearch indexing and distributed sharding.',
+      'Designed React-based UI workflows to configure and monitor long-running migration jobs, providing real-time status visibility and reducing support escalations.',
+      'Integrated AWS S3 with IAM-based access into the migration pipeline, reducing storage footprint by ~50% and improving scalability.',
     ],
   },
   {
-    title: 'Software Applications Engineer',
-    company_name: 'Hewlett Packard',
-    icon: hp_blue,
-    iconBg: '#E6DEDD',
-    date: 'Jul 2023 - Aug 2024',
-    points: [
-      'Enhanced frontend performance in React.js using Webpack, Jenkins, Jira, and AWS, contributing to a scalable platform with improved security.',
-      'Optimized the sign-up process by integrating Google Maps for auto-suggestions, reducing sign-up time by 70% & improving user experience.',
-      'Created a map widget for partner dashboards, enabling real-time regional customer visibility & streamlined identification by counts and names.',
-      'Significantly boosted code efficiency by 30% through refactoring, adopting functional components, and a microservice architecture.',
-    ],
-  },
-  {
-    title: 'R&D Software Intern',
-    company_name: 'Hewlett Packard',
-    icon: hp_blue,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Jul 2023',
-    points: [
-      "Spearheaded the development of Plantify (POC for HP's initiative) enabling the planting of a sapling based on customer purchases.",
-      'Led agile practices as Scrum Master, coordinating UI design in Figma & React, with secure token integration, optimizing performance by 20%.',
-      'Enhanced localization by adding Korean language support, and gained exposure to tools like EC2, S3, and CDN for streamlined deployment.',
-    ],
-  },
-  {
-    title: 'Software Developer',
-    company_name: 'Ambitech Pvt Ltd',
-    icon: ambitech,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2022 - Dec 2022',
-    points: [
-      'Delivered patient platform (Angular, Spring Boot, AWS Lambda) for 10K+ users with MFA security.',
-      'Integrated Bluetooth glucometer sync + RazorPay API, handling $20K monthly transactions.',
-      'Improved mobile UI workflows with glucose alerts, boosting engagement by 40%.',
-    ],
-  },
-  {
-    title: 'UI/UX Intern',
-    company_name: 'Ambitech Pvt Ltd',
-    icon: ambitech,
-    iconBg: '#E6DEDD',
-    date: 'Jul 2021 - Dec 2021',
-    points: [
-      'Designed UX for mobile & web apps with Adobe XD/Figma, streamlining patient workflows.',
-      'Created prototypes & Storybook UI components for consistent healthcare workflows.',
-      'Conducted usability testing with patients & doctors, reducing navigation errors by 25%.',
-    ],
-  },
-  {
-    title: 'Content Designer',
-    company_name: 'IEEE PCCOE',
+    title: 'Full Stack Developer',
+    company_name: 'Savitribai Phule Pune University',
     icon: pccoe,
     iconBg: '#E6DEDD',
-    date: 'January 2021 - February 2023',
+    date: 'Jun 2021 - May 2022',
     points: [
-      'Organized over 10+ cultural and technical events, showcasing strong planning & coordination skills.',
-      'One of the technical events was a coding competition, which sparked interest in competitive programming among students.',
-      'Designed 4 newsletters with creative layouts and engaging content, significantly enhancing communication and participation.',
+      'Developed a full-stack membership dashboard for a cultural event using Node.js, Express.js, and MongoDB with RESTful APIs for admin and user sign-up, login, and data retrieval, reducing manual registration processing time by ~40%.',
+      'Designed a React-based renewal dashboard with improved UX and reminders, increasing renewal completion rate by ~35%.',
+      'Automated Python scripts to generate charts and reports for admins, helping drive increased museum engagement through timely insights.',
     ],
   },
 ];
 
 const publications = [
   {
-    title: '1. Smart Toll Booth System using Smart Contracts',
-    desc: 'Our paper introduces a GPS-based toll collection system addressing challenges like inconsistent rates, long waits, and traffic congestion in India. Unlike RFID-based systems, it uses real-time vehicle tracking for seamless, stop-free toll payments. Blockchain integration ensures security and transparency with decentralized smart contracts, enhancing toll collection efficiency and integrity.',
-    name: 'IEEE Explore',
-    date: 'May 2023',
-    link: 'https://ieeexplore.ieee.org/document/10126123',
+    title: 'Object Detection and Recognition System Using Deep Learning Method',
+    desc: 'Object detection and recognition approach using deep learning techniques for accurate classification and localization.',
+    name: 'IEEE Xplore',
+    date: '2023',
+    link: 'https://ieeexplore.ieee.org/document/10126316',
   },
   {
-    title: '2. Exploration of Crowd Detection Techniques',
-    desc: 'With a growing population, crowd density estimation has become crucial for safety and effective surveillance. People counting plays a vital role in preventing risks during large gatherings. Techniques like crowd anomaly detection, behavior analysis, and human action identification aid in monitoring crowd density. This project leverages image and video processing to estimate the number of individuals, benefiting public event organizers, security systems, and campus management.',
-    name: 'International Journal of Application or Innovation in Engineering & Management',
-    date: 'May 2022',
+    title: 'Criminal Recognition System',
+    desc: 'Recognition system focused on identifying individuals for security and surveillance use cases.',
+    name: 'IEEE Xplore',
+    date: '2024',
+    link: 'https://ieeexplore.ieee.org/abstract/document/10497321',
+  },
+  {
+    title: 'Face Mask Detection Using Viola-Jones and SSD MobileNet V2',
+    desc: 'Copyright no. L – 105116/2021 | Govt. of India.',
+    name: 'Copyright Registration',
+    date: '2021',
     link: '',
-  },
-  {
-    title: '3. Decentralized voting with Ethereum Blockchain ',
-    desc: 'Traditional e-voting reduced costs and improved convenience but lacked reliability and security, as it relied on centralized systems vulnerable to manipulation. This project proposes a decentralized e-voting system using blockchain technology to ensure voter identity protection, secure data exchange, and a transparent, tamper-proof voting process.',
-    name: 'International Journal of Innovation Engineering and Science Research',
-    date: 'July 2021',
-    link: 'https://ijiesr.com/liebrary/e31/922429333.pdf',
   },
 ];
 
 const projects = [
   {
-    name: 'AutoToll',
+    name: 'Learning Management System',
     description:
-      'GPS-based toll collection system leveraging blockchain and smart contracts for secure, automated transactions and real-time tracking, reducing toll processing by 60%.',
+      'Implemented a role-based LMS (Admin/Teacher/Student) with React + Spring Boot for courses, assignments, grading, and analytics, including an AI pipeline that flags scores below 60% to recommend targeted study material and reduce manual monitoring for instructors.',
     tags: [
       {
-        name: 'blockchain',
+        name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'smartcontracts',
+        name: 'spring-boot',
         color: 'green-text-gradient',
       },
       {
-        name: 'truffle',
+        name: 'aws',
         color: 'pink-text-gradient',
       },
     ],
@@ -273,58 +208,16 @@ const projects = [
     source_code_link: 'https://github.com/',
   },
   {
-    name: 'QuickRide',
+    name: 'Emotion-Based Sentiment Analyzer',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient & efficient solution for transportation needs.',
+      'Full-stack React + Node.js web app for analyzing customer reviews, integrating ML models to reach 84% sentiment accuracy and 66% emotion classification accuracy with cached, asynchronous inference under 200ms.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Horizon',
-    description:
-      'A modern banking app with a dashboard for managing accounts, real-time transactions, and seamless user-to-user transfers, built with Next.js 14.',
-    tags: [
-      {
-        name: 'next',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'plaid',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'mysql',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: banking,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Reviewer LLM',
-    description:
-      'Web application that showcases various products, providing users with AI-generated sentiment-based summaries of customer reviews for better insights.',
-    tags: [
-      {
-        name: 'python',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'nlp',
+        name: 'nodejs',
         color: 'green-text-gradient',
       },
       {
@@ -335,11 +228,32 @@ const projects = [
     image: insightgen,
     source_code_link: 'https://github.com/',
   },
+  {
+    name: 'Pharmacy Management System',
+    description:
+      'Developed an Angular + Spring Boot app for clinics with JWT auth, MySQL, and modular billing/inventory services, reducing data entry by 60%.',
+    tags: [
+      {
+        name: 'angular',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'spring-boot',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'mysql',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: banking,
+    source_code_link: 'https://github.com/',
+  },
 ];
 
 export {
   services,
-  sketches,
+  activities,
   technologies,
   experiences,
   publications,

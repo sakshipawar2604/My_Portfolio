@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { logo, menu, close } from '../assets';
+import { profilePhoto, menu, close } from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -43,12 +43,12 @@ const Navbar = () => {
           }}
         >
           <img
-            src={logo}
-            alt='logo'
-            className='w-7 h-7 object-contain rounded-full'
+            src={profilePhoto}
+            alt='Profile'
+            className='w-10 h-10 object-cover rounded-full ring-2 ring-white/10'
           />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Kushal Choudhary &nbsp;
+            Sakshi Pawar&nbsp;
           </p>
         </Link>
 

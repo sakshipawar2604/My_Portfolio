@@ -42,26 +42,30 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div> */}
 
-      <h1 className={`${styles.heroHeadText} text-white mt-14`}>
-        Hi, I'm <span className='text-[#915EFF]'>Kushal</span>
+      <h1 className='text-white font-black lg:text-[52px] sm:text-[44px] xs:text-[38px] text-[34px] lg:leading-[60px] mt-10'>
+        Hi, I'm <span className='text-[#915EFF]'>Sakshi Pawar</span>
       </h1>
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
+        className='mt-4 text-secondary text-[16px] w-full max-w-none leading-[28px] text-justify'
       >
-        I am a Master’s student in Computer Science at UT Dallas with a
-        background in Information Technology and Data Science. I specialize in
-        full-stack development, cloud computing, and applied AI/ML, and have
-        worked on projects and internships spanning scalable platforms,
-        enterprise systems, and intelligent solutions. My experience includes
-        applying modern technologies like React, Node.js, Python, and AWS to
-        deliver robust, user-centric products. I am driven to create impactful
-        technologies that enhance user experience, optimize performance, and
-        solve complex real-world challenges.
+        I&apos;m an M.S. Computer Science student at the University of Texas at
+        Arlington building high-performance, cloud-native applications across
+        React, TypeScript, Spring Boot, Python, and AWS. I focus on measurable
+        impact — optimizing latency, improving reliability, and shipping systems
+        that scale in production. My core strengths lie in building
+        high-performance user interfaces and designing scalable backend
+        services. I focus on creating reliable APIs, optimizing database
+        performance through efficient querying and indexing strategies, and
+        improving overall system responsiveness. I have hands-on experience
+        deploying and monitoring applications in live production environments,
+        managing secure access controls, and troubleshooting issues through
+        structured log analysis. I continue to deepen my expertise in
+        containerization and modern, cloud-native architectures.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-10 flex flex-wrap gap-6 items-start justify-start'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

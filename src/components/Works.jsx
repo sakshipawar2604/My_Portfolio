@@ -17,14 +17,17 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+      className='sm:w-[360px] w-full'
+    >
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl w-full h-full flex flex-col'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -47,9 +50,11 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className='mt-5'>
+        <div className='mt-5 flex-1 flex flex-col'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <p className='mt-2 text-secondary text-[14px] flex-1'>
+            {description}
+          </p>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
@@ -78,7 +83,7 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-secondary text-[16px] w-full max-w-none leading-[28px] text-justify'
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. It reflects my ability to solve

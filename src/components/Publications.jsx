@@ -15,7 +15,7 @@ const PublicationCard = ({ index, title, name, desc, date, link }) => (
   >
     <motion.div
       variants={fadeIn('', 'spring', index * 0.5, 0.75)}
-      className='bg-black-200 p-10 rounded-3xl w-full hover:border-2 hover:border-purple-200 transition-all duration-100 ease-in-out'
+      className='bg-black-200 p-10 rounded-3xl w-full min-h-[220px] hover:border-2 hover:border-purple-200 transition-all duration-100 ease-in-out'
     >
       <p className='text-white text-[18px]'>{title}</p>
 
@@ -48,7 +48,7 @@ const Publications = () => {
           <h2 className={styles.sectionHeadText}>Publications</h2>
         </motion.div>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
+      <div className={`-mt-20 pb-14 ${styles.paddingX} grid grid-cols-1 gap-7`}>
         {publications.map((publication, index) => (
           <PublicationCard
             key={publication.name}
