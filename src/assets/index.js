@@ -32,6 +32,7 @@ import carrent from './carrent.png';
 import toll from './toll.jpg';
 import insightgen from './insightgen.png';
 import banking from './banking.png';
+import sentimentAnalyzer from './project/emotion sentiment analyzer.png';
 
 
 export {
@@ -66,4 +67,5 @@ export {
   toll,
   insightgen,
   banking,
+  sentimentAnalyzer,
 };

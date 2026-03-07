@@ -25,6 +25,7 @@ import {
   insightgen,
   threejs,
   banking,
+  sentimentAnalyzer,
 } from '../assets';
 
 export const navLinks = [
@@ -225,7 +226,7 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: insightgen,
+    image: sentimentAnalyzer,
     source_code_link: 'https://github.com/',
   },
   {
