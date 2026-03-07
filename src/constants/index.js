@@ -26,6 +26,8 @@ import {
   threejs,
   banking,
   sentimentAnalyzer,
+  lms,
+  pharmacyManagement,
 } from '../assets';
 
 export const navLinks = [
@@ -205,7 +207,7 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: toll,
+    image: lms,
     source_code_link: 'https://github.com/',
   },
   {
@@ -247,7 +249,7 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: banking,
+    image: pharmacyManagement,
     source_code_link: 'https://github.com/',
   },
 ];

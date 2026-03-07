@@ -33,6 +33,8 @@ import toll from './toll.jpg';
 import insightgen from './insightgen.png';
 import banking from './banking.png';
 import sentimentAnalyzer from './project/emotion sentiment analyzer.png';
+import lms from './project/lms.png';
+import pharmacyManagement from './project/pharmacy management.png';
 
 
 export {
@@ -68,4 +70,6 @@ export {
   insightgen,
   banking,
   sentimentAnalyzer,
+  lms,
+  pharmacyManagement,
 };
