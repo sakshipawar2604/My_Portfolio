@@ -167,21 +167,21 @@ const experiences = [
 const publications = [
   {
     title: 'Object Detection and Recognition System Using Deep Learning Method',
-    desc: 'Object detection and recognition approach using deep learning techniques for accurate classification and localization.',
+    desc: 'Developed a research-based object detection system using the YOLO (You Only Look Once) algorithm for real-time object detection and classification. The paper explores applications in autonomous driving, surveillance, medical imaging, and security systems. It highlights YOLO\'s speed and accuracy in detecting multiple objects from images or video streams.',
     name: 'IEEE Xplore',
     date: '2023',
     link: 'https://ieeexplore.ieee.org/document/10126316',
   },
   {
     title: 'Criminal Recognition System',
-    desc: 'Recognition system focused on identifying individuals for security and surveillance use cases.',
+    desc: 'Developed a web-based face recognition system using Deep Learning and CNN to support criminal identification and security screening. The paper explores applications in surveillance, airports, banks, and law enforcement investigations. It highlights how automated facial recognition can help identify offenders more efficiently and reliably.',
     name: 'IEEE Xplore',
     date: '2024',
     link: 'https://ieeexplore.ieee.org/abstract/document/10497321',
   },
   {
     title: 'Face Mask Detection Using Viola-Jones and SSD MobileNet V2',
-    desc: 'Copyright no. L – 105116/2021 | Govt. of India.',
+    desc: 'Developed a real-time Face Mask Detection system using a two-stage approach: Viola-Jones for face detection and MobileNetV2/SSD for mask classification. The project used OpenCV and TensorFlow to identify masked and unmasked faces from images/video frames, supporting safety monitoring in offices, hospitals, airports, and public areas. Its strength is combining fast Haar-based face detection with a lightweight deep learning classifier suitable for real-time use.',
     name: 'Copyright Registration',
     date: '2021',
     link: '',
