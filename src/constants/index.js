@@ -19,11 +19,10 @@ import {
   systools,
   ieee,
   uta,
-  carrent,
+  lincesCkf,
   toll,
   insightgen,
   threejs,
-  banking,
   sentimentAnalyzer,
   lms,
   pharmacyManagement,
@@ -192,7 +191,7 @@ const projects = [
   {
     name: 'Learning Management System',
     description:
-      'Implemented a role-based LMS (Admin/Teacher/Student) with React + Spring Boot for courses, assignments, grading, and analytics, including an AI pipeline that flags scores below 60% to recommend targeted study material and reduce manual monitoring for instructors.',
+      'Role-based LMS with React and Spring Boot for courses, grading, and analytics. AI recommends study material when scores fall below 60%.',
     tags: [
       {
         name: 'react',
@@ -213,7 +212,7 @@ const projects = [
   {
     name: 'Emotion-Based Sentiment Analyzer',
     description:
-      'Full-stack React + Node.js web app for analyzing customer reviews, integrating ML models to reach 84% sentiment accuracy and 66% emotion classification accuracy with cached, asynchronous inference under 200ms.',
+      'Full-stack React and Node.js app that analyzes customer reviews with ML models. Delivers 84% sentiment and 66% emotion accuracy with cached inference under 200ms.',
     tags: [
       {
         name: 'react',
@@ -232,9 +231,34 @@ const projects = [
     source_code_link: 'https://github.com/',
   },
   {
+    name: "Linces'CKF — Premium Silk Fashion E-Commerce",
+    description:
+      'Silk fashion e-commerce capstone with React, Express, and MySQL. Features catalog, cart, custom orders, admin dashboards, chat, and Azure deployment.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'nodejs',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'mysql',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'azure',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: lincesCkf,
+    source_code_link: 'https://github.com/',
+  },
+  {
     name: 'Pharmacy Management System',
     description:
-      'Developed an Angular + Spring Boot app for clinics with JWT auth, MySQL, and modular billing/inventory services, reducing data entry by 60%.',
+      'Angular and Spring Boot clinic system with JWT auth, MySQL, and billing/inventory modules. Cut manual data entry by 60% through streamlined workflows.',
     tags: [
       {
         name: 'angular',
