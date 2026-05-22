@@ -123,11 +123,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'AI Software Developer',
+    title: 'AI Software Developer (Volunteering)',
     company_name: 'University of Texas at Arlington',
     icon: uta,
     iconBg: '#E6DEDD',
-    date: 'Aug 2024 - Present',
+    date: 'Aug 2024 - Apr 2026',
     points: [
       'Built a GenAI assistant with LangChain and AWS Lambda, automating queries and signups while reducing manual effort by 60%.',
       'Designed LangGraph-based agent workflows for intent routing, FAQ retrieval, event lookup, and contextual response generation.',
