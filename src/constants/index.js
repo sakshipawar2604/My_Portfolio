@@ -19,7 +19,6 @@ import {
   systools,
   ieee,
   uta,
-  pccoe,
   carrent,
   toll,
   insightgen,
@@ -124,6 +123,19 @@ const technologies = [
 
 const experiences = [
   {
+    title: 'AI Software Developer',
+    company_name: 'University of Texas at Arlington',
+    icon: uta,
+    iconBg: '#E6DEDD',
+    date: 'Aug 2024 - Present',
+    points: [
+      'Built a GenAI assistant with LangChain and AWS Lambda, automating queries and signups while reducing manual effort by 60%.',
+      'Designed LangGraph-based agent workflows for intent routing, FAQ retrieval, event lookup, and contextual response generation.',
+      'Implemented CrewAI-based multi-agent orchestration for classification, retrieval, and response validation across member services.',
+      'Developed async inference APIs with Node.js microservices, improving AI response throughput by 30% for 500+ member users.',
+    ],
+  },
+  {
     title: 'Software Engineer',
     company_name: 'Accenture',
     icon: accenture,
@@ -148,18 +160,6 @@ const experiences = [
       'Improved email search performance by ~40% on 100k+ records using Elasticsearch indexing and distributed sharding.',
       'Designed React-based UI workflows to configure and monitor long-running migration jobs, providing real-time status visibility and reducing support escalations.',
       'Integrated AWS S3 with IAM-based access into the migration pipeline, reducing storage footprint by ~50% and improving scalability.',
-    ],
-  },
-  {
-    title: 'Full Stack Developer',
-    company_name: 'Savitribai Phule Pune University',
-    icon: pccoe,
-    iconBg: '#E6DEDD',
-    date: 'Jun 2021 - May 2022',
-    points: [
-      'Developed a full-stack membership dashboard for a cultural event using Node.js, Express.js, and MongoDB with RESTful APIs for admin and user sign-up, login, and data retrieval, reducing manual registration processing time by ~40%.',
-      'Designed a React-based renewal dashboard with improved UX and reminders, increasing renewal completion rate by ~35%.',
-      'Automated Python scripts to generate charts and reports for admins, helping drive increased museum engagement through timely insights.',
     ],
   },
 ];
