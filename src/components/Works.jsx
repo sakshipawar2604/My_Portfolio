@@ -2,8 +2,9 @@ import React from 'react';
 import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 
+import { FaGithub } from 'react-icons/fa';
+
 import { styles } from '../styles';
-import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -78,15 +79,29 @@ const ProjectCard = ({
           )}
         </div>
 
-        <div className='mt-auto pt-4 flex flex-wrap gap-2 shrink-0'>
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
+        <div className='mt-auto pt-4 shrink-0'>
+          <div className='flex flex-wrap gap-2'>
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[14px] ${tag.color}`}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
+
+          {source_code_link && source_code_link !== 'https://github.com/' && (
+            <a
+              href={source_code_link}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='mt-4 flex items-center justify-center gap-2 text-white text-[14px] font-semibold hover:text-[#915EFF] transition-colors'
             >
-              #{tag.name}
-            </p>
-          ))}
+              <FaGithub className='w-5 h-5' />
+              View on GitHub
+            </a>
+          )}
         </div>
       </Tilt>
     </motion.div>
