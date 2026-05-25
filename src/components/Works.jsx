@@ -12,6 +12,7 @@ const ProjectCard = ({
   index,
   name,
   description,
+  points,
   tags,
   image,
   source_code_link,
@@ -27,7 +28,9 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl w-full h-[540px] flex flex-col'
+        className={`bg-tertiary p-5 rounded-2xl w-full flex flex-col ${
+          points ? 'h-[700px]' : 'h-[540px]'
+        }`}
       >
         <div className='relative w-full h-[200px] shrink-0'>
           <img
@@ -54,9 +57,25 @@ const ProjectCard = ({
           <h3 className='text-white font-bold text-[22px] leading-snug line-clamp-2 min-h-[3.75rem]'>
             {name}
           </h3>
-          <p className='mt-2 text-secondary text-[14px] leading-relaxed min-h-[4.75rem]'>
-            {description}
-          </p>
+          {points ? (
+            <ul className='mt-2 flex-1 flex flex-col gap-2 list-none'>
+              {points.map((point, i) => (
+                <li
+                  key={`${name}-point-${i}`}
+                  className='flex flex-1 gap-2 text-secondary text-[12.5px] leading-[1.45] text-justify'
+                >
+                  <span className='text-[#915EFF] font-bold shrink-0 leading-[1.45]'>
+                    •
+                  </span>
+                  <span className='flex-1'>{point}</span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className='mt-2 text-secondary text-[14px] leading-relaxed min-h-[4.75rem]'>
+              {description}
+            </p>
+          )}
         </div>
 
         <div className='mt-auto pt-4 flex flex-wrap gap-2 shrink-0'>
@@ -94,7 +113,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-7'>
+      <div className='mt-20 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-7 items-stretch'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

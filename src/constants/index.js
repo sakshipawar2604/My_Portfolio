@@ -25,7 +25,6 @@ import {
   threejs,
   sentimentAnalyzer,
   lms,
-  pharmacyManagement,
 } from '../assets';
 
 export const navLinks = [
@@ -190,8 +189,11 @@ const publications = [
 const projects = [
   {
     name: 'Learning Management System',
-    description:
-      'Role-based LMS with React and Spring Boot for courses, grading, and analytics. AI recommends study material when scores fall below 60%.',
+    points: [
+      'Designed a relational LMS database and Java (Spring Boot) services that aggregate enrollments, submissions, and grades into dashboard KPIs: system totals, class averages, and at-risk student counts.',
+      'Built React dashboards with KPI cards, progress bars, and data tables for admin, teacher, and student roles with live metrics for users, courses, performance, and assignments.',
+      'Delivered an end-to-end pipeline from database schema and REST APIs through metric computation to an interactive UI for operational monitoring and decision-making.',
+    ],
     tags: [
       {
         name: 'react',
@@ -211,8 +213,11 @@ const projects = [
   },
   {
     name: 'Emotion-Based Sentiment Analyzer',
-    description:
-      'Full-stack React and Node.js app that analyzes customer reviews with ML models. Delivers 84% sentiment and 66% emotion accuracy with cached inference under 200ms.',
+    points: [
+      'Built a React analysis dashboard that classifies customer reviews into predicted emotion and sentiment with KPI result cards and Top 3 emotion probability progress bars.',
+      'Integrated ML models via Node.js/Express with cached async inference, achieving 84% sentiment accuracy and 66% emotion accuracy in under 200ms.',
+      'Delivered an end-to-end pipeline from review input and model serving through live result visualization for real-time feedback and product insight monitoring.',
+    ],
     tags: [
       {
         name: 'react',
@@ -232,8 +237,11 @@ const projects = [
   },
   {
     name: "Linces'CKF — Premium Silk Fashion E-Commerce",
-    description:
-      'Silk fashion e-commerce capstone with React, Express, and MySQL. Features catalog, cart, custom orders, admin dashboards, chat, and Azure deployment.',
+    points: [
+      'Designed a normalized MySQL database with foreign keys, constraints, and seed data for users, products, orders, reviews, custom orders, support tickets, and chat.',
+      'Built admin and user dashboards with live business metrics (revenue, orders, products, users) via Express APIs and React modules for orders, inventory, users, and support.',
+      'Deployed a bilingual React e-commerce app with catalog filtering, cart/checkout, custom quotes, JWT auth, and Azure-hosted frontend/backend integration.',
+    ],
     tags: [
       {
         name: 'react',
@@ -253,27 +261,6 @@ const projects = [
       },
     ],
     image: lincesCkf,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Pharmacy Management System',
-    description:
-      'Angular and Spring Boot clinic system with JWT auth, MySQL, and billing/inventory modules. Cut manual data entry by 60% through streamlined workflows.',
-    tags: [
-      {
-        name: 'angular',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'spring-boot',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'mysql',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: pharmacyManagement,
     source_code_link: 'https://github.com/',
   },
 ];

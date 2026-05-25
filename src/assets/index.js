@@ -34,7 +34,6 @@ import insightgen from './insightgen.png';
 import banking from './banking.png';
 import sentimentAnalyzer from './project/emotion sentiment analyzer.png';
 import lms from './project/lms.png';
-import pharmacyManagement from './project/pharmacy management.png';
 import lincesCkf from './project/linces-ckf.png';
 
 
@@ -72,6 +71,5 @@ export {
   banking,
   sentimentAnalyzer,
   lms,
-  pharmacyManagement,
   lincesCkf,
 };
