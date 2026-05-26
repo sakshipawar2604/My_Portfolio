@@ -29,41 +29,28 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className={`bg-tertiary p-5 rounded-2xl w-full flex flex-col ${
-          points ? 'h-[700px]' : 'h-[540px]'
-        }`}
+        className='bg-tertiary p-5 rounded-2xl w-full h-full flex flex-col shadow-card border border-white/5'
       >
-        <div className='relative w-full h-[200px] shrink-0'>
-          <img
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
-          />
-
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            {/* <div
-              onClick={() => window.open(source_code_link, '_blank')}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div> */}
+        <div className='green-pink-gradient p-[2px] rounded-2xl shadow-2xl shrink-0 w-full'>
+          <div className='bg-black-100 rounded-2xl p-2 w-full flex items-center justify-center min-h-[240px]'>
+            <img
+              src={image}
+              alt='project_image'
+              className='w-full h-auto max-h-[360px] object-contain rounded-xl contrast-[1.1] brightness-[1.08] saturate-[1.05]'
+            />
           </div>
         </div>
 
-        <div className='mt-4 flex-1 flex flex-col min-h-0'>
-          <h3 className='text-white font-bold text-[22px] leading-snug line-clamp-2 min-h-[3.75rem]'>
+        <div className='mt-5 flex-1 flex flex-col min-h-0'>
+          <h3 className='text-white font-bold text-[20px] leading-snug line-clamp-2 min-h-[3.25rem]'>
             {name}
           </h3>
           {points ? (
-            <ul className='mt-2 flex-1 flex flex-col gap-2 list-none'>
+            <ul className='mt-2 flex-1 flex flex-col gap-1.5 list-none min-h-[200px]'>
               {points.map((point, i) => (
                 <li
                   key={`${name}-point-${i}`}
-                  className='flex flex-1 gap-2 text-secondary text-[12.5px] leading-[1.45] text-justify'
+                  className='flex flex-1 gap-2 text-secondary text-[12px] leading-[1.4] text-justify'
                 >
                   <span className='text-[#915EFF] font-bold shrink-0 leading-[1.45]'>
                     •
@@ -128,7 +115,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-7 items-stretch'>
+      <div className='mt-20 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8 items-stretch'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
