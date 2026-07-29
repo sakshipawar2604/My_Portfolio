@@ -23,6 +23,8 @@ import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
 
 import accenture from './company/accenture.png';
+import bny from './company/bny.png';
+import iws from './company/iws.png';
 import systools from './company/systools.png';
 import ieee from './company/ieee.png';
 import uta from './company/uta.png';
@@ -62,6 +64,8 @@ export {
   threejs,
   pccoe,
   accenture,
+  bny,
+  iws,
   systools,
   ieee,
   uta,
